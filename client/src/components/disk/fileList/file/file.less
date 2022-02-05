@@ -1,0 +1,101 @@
+@import "../../../../utils/colors";
+
+.file {
+  margin: 10px 0;
+  border-bottom: solid 2px @font-color ;
+  display: grid;
+  grid-template-columns: 1fr 4fr repeat(4, 1fr);
+  align-items: center;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+  &__img {
+    justify-self: center;
+  }
+
+  &__date {
+    grid-column-start: 5;
+    justify-self: center;
+  }
+  &__size {
+    grid-column-start: 6;
+    justify-self: center;
+  }
+
+  &__btn {
+    display: none;
+	border: 2px solid #566885;
+	border-radius: 20px;
+	cursor: pointer;  
+	min-width: 70px;
+	min-height: 30px;
+	border-radius: 20px;
+  }
+
+  &:hover &__date {
+    grid-column-start: 3;
+  }
+  &:hover &__size {
+    grid-column-start: 4;
+  }
+  &:hover &__download {
+	margin: 5px;
+    grid-column-start: 5;
+    display: flex;
+	background: no-repeat center center;
+	background-image: url(../../../../assets/img/download_btn.svg);
+  }
+  &:hover &__delete {
+	margin: 5px;
+    grid-column-start: 6;
+    display: flex;
+	background: no-repeat center center;
+	background-image: url(../../../../assets/img/delete_btn.svg);
+  }
+}
+
+.file-plate {
+	width: 150px;
+	height: 150px;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__img{
+		height: 100px;
+		width: 100px;
+	}
+
+	&__btns {
+		display: none;
+	}
+
+	&:hover &__btns{
+		display: flex;
+		flex-direction: column;
+	}
+
+	&:hover &__delete{
+		margin: 5px auto;
+		border: 2px solid #566885;
+		cursor: pointer;  
+		min-width: 70px;
+		min-height: 30px;
+		border-radius: 20px;
+		background: no-repeat center center;
+		background-image: url(../../../../assets/img/delete_btn.svg);
+	}
+
+	&:hover &__download{
+		margin: 5px auto;
+		border: 2px solid #566885;
+		cursor: pointer;  
+		min-width: 70px;
+		min-height: 30px;
+		border-radius: 20px;
+		background: no-repeat center center;
+		background-image: url(../../../../assets/img/download_btn.svg);
+	}
+}
