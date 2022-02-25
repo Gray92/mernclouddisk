@@ -10,7 +10,7 @@
 <li>Сортировка по типу, размеру файла и дате</li>
 </ul>
 
-<a href="mernappsclouddisk.herokuapp.com">Посмотреть рабочее приложение на Heroku</a>
+<a href="https://mernappsclouddisk.herokuapp.com/login">Посмотреть рабочее приложение на Heroku</a>
   
   <h2>Стек</h2>
   <h4>React JS</h4>
